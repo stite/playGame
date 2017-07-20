@@ -31,4 +31,6 @@ function domUpdata(user,computer){
     
 }
 ```
+
+[个人博客](http://www.stite.net)
 * 纯属练手  ^_^
