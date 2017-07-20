@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>简单猜拳游戏</title>
+  <meta name="keywords" content="前端,JS,JQ,javascript,div,css,html5,css3,前端博客,前端开发" />
+  <meta name="description" content="小明的个人博客,小明的前端随笔,前端博客,前端开发" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <style>
+  *{margin:0; padding: 0; font-weight: 200;}
+  .ten,.computer{
+      width: 50%;
+      float: left;
+      padding-top: 30px;
+      text-align: center
+  }
+  .ten,.computer dt{
+      font-size: 28px;
+  }
+  .ten img,.computer img{
+      margin-top: 30px;
+      width: 30%;
+  }
+  .computer img{
+      transform:rotateY(180deg);
+  }
+  .select{
+      text-align: center;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-top: 2%;
+  }
+  .select dt{
+      width: 100%;
+      overflow: hidden;
+      line-height: 50px;
+  }
+  .select button{
+      width: 20%;
+      border:none;
+      color: #fff;
+      border-radius: 8px;
+      line-height: 45px;
+      margin: 0 5%;
+      outline: none;
+      font-size: 18px;
+      cursor: pointer;
+  }
+  #warn{
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      font-size: 25px;
+      line-height: 50px;
+      color: red;
+      padding-top: 2%;
+      opacity: 0;
+  }
+  </style>
+</head>
+
+<body>
+    <div class="ten">
+        <dl>
+            <dt>你</dt>
+            <dd><img src="images/t-1.png" id="user" alt=""></dd>
+        </dl>
+    </div>
+    <div class="computer">
+        <dl>
+            <dt>电脑</dt>
+            <dd><img src="images/t-1.png" id="computer" alt=""></dd>
+        </dl>
+    </div>
+    <div id="warn">平手</div>
+    <div class="select">
+        <dl>
+            <dt>选择出：</dt>
+            <dd>
+                <button value="1" style="background:#b60d0d">石头</button>
+                <button value="2" style="background:#FF5722;">剪刀</button>
+                <button value="3" style="background:#2196F3">布</button>
+            </dd>
+        </dl>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
