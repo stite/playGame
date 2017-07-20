@@ -31,6 +31,6 @@ function domUpdata(user,computer){
     
 }
 ```
-[演示地址](http://www.stite.net/content/caseDemo/playGame/)
-[个人博客](http://www.stite.net)
+* [演示地址](http://www.stite.net/content/caseDemo/playGame/)
+* [个人博客](http://www.stite.net)
 * 纯属练手  ^_^
